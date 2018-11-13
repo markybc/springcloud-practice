@@ -1,3 +1,7 @@
+#启动顺序
+
+eureka-server > config-server > zipkin-server > hystrix-dashboard > order > stock > zuul
+
 #eureka-server 注册中心
 
 访问地址：http://localhost:8761/
