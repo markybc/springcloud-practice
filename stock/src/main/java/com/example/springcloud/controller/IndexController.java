@@ -16,6 +16,13 @@ public class IndexController {
 
 	@GetMapping("index")
 	public String index(){
+		try {
+			System.out.print("s");
+			Thread.sleep(1000L);
+			System.out.print("e");
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		return "stock";
 	}
 
